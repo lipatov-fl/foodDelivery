@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Доставка еды</string>
+    <string name="starting_title">Волны еды</string>
+    <string name="starting_subtitle">Доставьте любимую еду</string>
+    <string name="footer_design_by">Дизайн NeatRoots</string>
+    <string name="starting_logo_description">Стартовый логотип  еды</string>
+</resources>
