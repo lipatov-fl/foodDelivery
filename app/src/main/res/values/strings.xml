@@ -1,8 +1,11 @@
 <resources>
     <string name="app_name">FoodDelivery</string>
     <!-- Start screen -->
-    <string name="starting_logo_description">Starter food logo</string>
+    <string name="food_logo_description">Food logo</string>
     <string name="starting_title">Waves Of Food</string>
     <string name="starting_subtitle">Deliver Favorite Food</string>
     <string name="footer_design_by">Design By \nNeatRoots</string>
+    <!-- Second screen -->
+    <string name="btn_next">Next</string>
+    <string name="second_title">Enjoy Restaurant Quality Meals \n at Home</string>
 </resources>
