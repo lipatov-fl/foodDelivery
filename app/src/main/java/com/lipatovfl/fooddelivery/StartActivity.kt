@@ -8,12 +8,12 @@ import com.lipatovfl.fooddelivery.databinding.ActivityMainBinding
 import com.lipatovfl.fooddelivery.databinding.ActivityStartBinding
 
 class StartActivity : AppCompatActivity() {
-    lateinit var bindingClass : ActivityStartBinding
+    lateinit var startBinding : ActivityStartBinding
     override fun onCreate(s: Bundle?) {
         super.onCreate(s)
-        bindingClass = ActivityStartBinding.inflate(layoutInflater)
-        setContentView(bindingClass.root)
-        bindingClass.btnGoUserLogin.setOnClickListener {
+        startBinding = ActivityStartBinding.inflate(layoutInflater)
+        setContentView(startBinding.root)
+        startBinding.btnGoUserLogin.setOnClickListener {
             val intent = Intent(this@StartActivity, LoginUserActivity :: class.java)
             startActivity(intent)
             finish()

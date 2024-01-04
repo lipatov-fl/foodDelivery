@@ -1,11 +1,25 @@
 <resources>
-    <string name="app_name">FoodDelivery</string>
+    <string name="app_name" translatable="false">FoodDelivery</string>
     <!-- Start screen -->
-    <string name="food_logo_description">Food logo</string>
-    <string name="starting_title">Waves Of Food</string>
-    <string name="starting_subtitle">Deliver Favorite Food</string>
-    <string name="footer_design_by">Design By \nNeatRoots</string>
+    <string name="food_logo_description" translatable="false">Food logo</string>
+    <string name="starting_title" translatable="false">Waves Of Food</string>
+    <string name="starting_subtitle" translatable="false">Deliver Favorite Food</string>
+    <string name="footer_design_by" translatable="false">Design By \nNeatRoots</string>
+
     <!-- Second screen -->
-    <string name="btn_next">Next</string>
-    <string name="second_title">Enjoy Restaurant Quality Meals \n at Home</string>
+    <string name="btn_next" translatable="false">Next</string>
+    <string name="second_title" translatable="false">Enjoy Restaurant Quality Meals \n at Home</string>
+
+    <!-- Login screen -->
+    <string name="login_to_acc" translatable="false">Login To Your Account</string>
+    <string name="name_hint" translatable="false">Name</string>
+    <string name="email_or_number_hint" translatable="false">Email or Phone Number</string>
+    <string name="password_hint" translatable="false">Password</string>
+    <string name="or_text" translatable="false">Or</string>
+    <string name="login_using" translatable="false">Continue With</string>
+    <string name="help_acc" translatable="false">Don’t Have Account?</string>
+    <string name="btn_facebook" translatable="false">Facebook</string>
+    <string name="btn_google" translatable="false">Google</string>
+    <string name="btn_login" translatable="false">Login</string>
+
 </resources>
