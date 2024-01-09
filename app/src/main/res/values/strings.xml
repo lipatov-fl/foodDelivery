@@ -13,7 +13,7 @@
     <!-- Login screen -->
     <string name="login_to_acc" translatable="false">Login To Your Account</string>
     <string name="name_hint" translatable="false">Name</string>
-    <string name="email_or_number_hint" translatable="false">Email or Phone Number</string>
+    <string name="email_or_number_hint" translatable="false">Email</string>
     <string name="password_hint" translatable="false">Password</string>
     <string name="or_text" translatable="false">Or</string>
     <string name="login_using" translatable="false">Continue With</string>
