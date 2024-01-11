@@ -72,7 +72,7 @@
         android:background="@drawable/edit_text_bg"
         android:elevation="2in"
         android:fontFamily="@font/lato"
-        android:hint="@string/email_or_number_hint"
+        android:hint="@string/email_hint"
         android:inputType="textEmailAddress"
         android:outlineSpotShadowColor="@color/start_color_green"
         android:paddingStart="28dp"

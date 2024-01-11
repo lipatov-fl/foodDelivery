@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="15dp"
+    android:paddingLeft="15dp"
+    tools:context=".SignUpUserActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="83dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/wavesOfFo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/yeonsung"
+        android:text="@string/starting_title"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/deliverFa"
+        app:layout_constraintEnd_toEndOf="@id/logo"
+        app:layout_constraintStart_toStartOf="@id/logo"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/deliverFa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:fontFamily="@font/lato"
+        android:text="@string/starting_subtitle"
+        android:textColor="@color/start_color_green"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/signUpHere"
+        app:layout_constraintEnd_toEndOf="@id/wavesOfFo"
+        app:layout_constraintStart_toStartOf="@id/wavesOfFo"
+        app:layout_constraintTop_toBottomOf="@+id/wavesOfFo" />
+
+    <TextView
+        android:id="@+id/signUpHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:fontFamily="@font/yeonsung"
+        android:text="@string/sign_up_here"
+        android:textColor="@color/start_color_green"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@id/editName"
+        app:layout_constraintEnd_toEndOf="@+id/deliverFa"
+        app:layout_constraintStart_toStartOf="@+id/deliverFa"
+        app:layout_constraintTop_toBottomOf="@+id/deliverFa" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawableLeft="@drawable/ic_user"
+        android:drawablePadding="15dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:hint="@string/name_hint"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        app:layout_constraintBottom_toTopOf="@id/editEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpHere" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawableLeft="@drawable/ic_lock"
+        android:drawablePadding="15dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        app:layout_constraintBottom_toTopOf="@id/or"
+        app:layout_constraintEnd_toEndOf="@+id/editName"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editName"
+        app:layout_constraintTop_toBottomOf="@+id/editEmail" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawableLeft="@drawable/ic_mail"
+        android:drawablePadding="15dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15dp"
+        app:layout_constraintBottom_toTopOf="@id/editPassword"
+        app:layout_constraintEnd_toEndOf="@+id/editName"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editName"
+        app:layout_constraintTop_toBottomOf="@+id/editName" />
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/yeonsung"
+        android:text="@string/or_text"
+        app:layout_constraintBottom_toTopOf="@id/signUpWith"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPassword" />
+
+    <TextView
+        android:id="@+id/signUpWith"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/yeonsung"
+        android:text="@string/sign_up_with"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/or" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignUpFb"
+        android:layout_width="152dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawableLeft="@drawable/facebook"
+        android:drawablePadding="15dp"
+        android:padding="15dp"
+        android:text="@string/btn_facebook"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintEnd_toStartOf="@+id/btnSignUpGoogle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpWith" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignUpGoogle"
+        android:layout_width="152dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="13dp"
+        android:padding="15dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawableLeft="@drawable/google"
+        android:drawablePadding="15dp"
+        android:text="@string/btn_google"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintBottom_toTopOf="@id/button6"
+        app:layout_constraintStart_toEndOf="@+id/btnSignUpFb"
+        app:layout_constraintTop_toBottomOf="@+id/signUpWith" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="157dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/btn_create_acc"
+        app:layout_constraintBottom_toTopOf="@id/textView18"
+        app:layout_constraintEnd_toEndOf="@+id/btnSignUpGoogle"
+        app:layout_constraintStart_toStartOf="@+id/btnSignUpFb"/>
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/account_created"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="12sp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

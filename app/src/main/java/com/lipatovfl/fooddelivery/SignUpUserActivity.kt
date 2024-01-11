@@ -1,5 +1,11 @@
 package com.lipatovfl.fooddelivery
 
-class SignUpUserActivity {
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
 
+class SignUpUserActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_sign_up_user)
+    }
 }
