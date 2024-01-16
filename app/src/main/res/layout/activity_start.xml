@@ -8,19 +8,19 @@
     tools:context=".StartActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/burgerr"
         android:layout_width="333dp"
         android:layout_height="312dp"
         android:layout_marginTop="112dp"
         android:contentDescription="@string/food_logo_description"
-        app:layout_constraintBottom_toTopOf="@id/textView4"
+        app:layout_constraintBottom_toTopOf="@id/secondTitle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/burgerr" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/secondTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="29dp"
@@ -30,13 +30,13 @@
         android:textColor="@color/start_color_green"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/btn_go_user_login"
+        app:layout_constraintBottom_toTopOf="@id/btnGoUserLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/burgerr" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_go_user_login"
+        android:id="@+id/btnGoUserLogin"
         android:layout_width="157dp"
         android:layout_height="57dp"
         android:layout_marginTop="162dp"
@@ -50,14 +50,14 @@
         android:outlineSpotShadowColor="@color/start_color_green"
         android:outlineAmbientShadowColor="@color/start_color_green"
         android:elevation="3dp"
-        app:layout_constraintBottom_toTopOf="@id/textView6"
+        app:layout_constraintBottom_toTopOf="@id/desingAuthor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/secondTitle"
         tools:ignore="UnusedAttribute" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/desingAuthor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -70,5 +70,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_go_user_login" />
+        app:layout_constraintTop_toBottomOf="@+id/btnGoUserLogin" />
 </androidx.constraintlayout.widget.ConstraintLayout>

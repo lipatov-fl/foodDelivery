@@ -6,14 +6,13 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:padding="15dp"
-    android:paddingLeft="15dp"
     tools:context=".SignUpUserActivity">
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="83dp"
+        android:layout_marginTop="43dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -135,12 +134,14 @@
         android:id="@+id/signUpWith"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
         android:fontFamily="@font/yeonsung"
         android:text="@string/sign_up_with"
         android:textColor="@color/black"
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnSignUpFb"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/or" />
 
@@ -148,13 +149,14 @@
         android:id="@+id/btnSignUpFb"
         android:layout_width="152dp"
         android:layout_height="57dp"
-        android:layout_marginTop="13dp"
+        android:layout_marginBottom="18dp"
         android:background="@drawable/edit_text_bg"
         android:drawableLeft="@drawable/facebook"
         android:drawablePadding="15dp"
         android:padding="15dp"
         android:text="@string/btn_facebook"
-        app:layout_constraintBottom_toTopOf="@+id/button6"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/btnCreateAcc"
         app:layout_constraintEnd_toStartOf="@+id/btnSignUpGoogle"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -165,37 +167,47 @@
         android:layout_width="152dp"
         android:layout_height="57dp"
         android:layout_marginTop="13dp"
-        android:padding="15dp"
         android:background="@drawable/edit_text_bg"
         android:drawableLeft="@drawable/google"
         android:drawablePadding="15dp"
+        android:padding="15dp"
         android:text="@string/btn_google"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@id/btnCreateAcc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintBottom_toTopOf="@id/button6"
         app:layout_constraintStart_toEndOf="@+id/btnSignUpFb"
         app:layout_constraintTop_toBottomOf="@+id/signUpWith" />
 
-    <Button
-        android:id="@+id/button6"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCreateAcc"
         android:layout_width="157dp"
         android:layout_height="57dp"
         android:layout_marginTop="18dp"
+        android:background="@drawable/green_btn"
         android:text="@string/btn_create_acc"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@id/textView18"
-        app:layout_constraintEnd_toEndOf="@+id/btnSignUpGoogle"
-        app:layout_constraintStart_toStartOf="@+id/btnSignUpFb"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSignUpGoogle" />
 
     <TextView
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/account_created"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:textSize="12sp"
         android:layout_marginTop="18dp"
+        android:fontFamily="@font/lato"
+        android:text="@string/account_created"
+        android:textColor="@color/start_color_green"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnCreateAcc" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
