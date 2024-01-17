@@ -28,4 +28,6 @@
     <string name="btn_create_acc" translatable="false">Create Account</string>
     <string name="account_created" translatable="false">Already Have An Account?</string>
 
+    <!-- Choose Location screen -->
+    <string name="choose_location" translatable="false">Choose Your Location </string>
 </resources>

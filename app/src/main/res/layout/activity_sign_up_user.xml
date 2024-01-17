@@ -198,13 +198,13 @@
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@id/textView18"
+        app:layout_constraintBottom_toTopOf="@id/btnHaveAcc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnSignUpGoogle" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/btnHaveAcc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="18dp"
