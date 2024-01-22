@@ -15,9 +15,9 @@
         android:fontFamily="@font/yeonsung"
         android:text="@string/choose_location"
         android:textSize="33sp"
+        app:layout_constraintBottom_toTopOf="@id/set_location"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintBottom_toTopOf="@id/set_location"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,23 +27,55 @@
         android:layout_width="match_parent"
         android:layout_height="57dp"
         android:layout_marginTop="20dp"
-        app:endIconDrawable="@drawable/arrow_down"
-        app:endIconTint="@color/black"
         app:boxStrokeWidth="0dp"
         app:boxStrokeWidthFocused="0dp"
+        app:endIconDrawable="@drawable/arrow_down"
+        app:endIconTint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:ignore="MissingConstraints">
+
         <AutoCompleteTextView
+            android:id="@+id/listOffLocation"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/listOffLocation"
-            android:inputType="none"
             android:background="@drawable/edit_text_bg"
-            android:hint="@string/choose_location"
             android:fontFamily="@font/lato"
-            android:paddingBottom="17dp"/>
+            android:hint="@string/choose_location"
+            android:inputType="none"
+            android:paddingBottom="17dp" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/to_provide"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        android:fontFamily="@font/lato"
+        android:text="@string/geoData_request"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/desingAuthor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_location" />
+
+    <TextView
+        android:id="@+id/desingAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:fontFamily="@font/yeonsung"
+        android:text="@string/footer_design_by"
+        android:textAlignment="center"
+        android:textColor="@color/start_color_green"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/to_provide" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

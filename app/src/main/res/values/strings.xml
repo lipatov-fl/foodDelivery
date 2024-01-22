@@ -30,4 +30,5 @@
 
     <!-- Choose Location screen -->
     <string name="choose_location" translatable="false">Choose Your Location </string>
+    <string name="geoData_request" translatable="false">To provide you with the best dining experience, we need your permission to access your device's location. By enabling location services, we can offer personalized restaurant recommendations, accurate delivery estimates, and ensure a seamless food delivery experience." </string>
 </resources>
