@@ -29,6 +29,16 @@
     <string name="account_created" translatable="false">Already Have An Account?</string>
 
     <!-- Choose Location screen -->
-    <string name="choose_location" translatable="false">Choose Your Location </string>
-    <string name="geoData_request" translatable="false">To provide you with the best dining experience, we need your permission to access your device's location. By enabling location services, we can offer personalized restaurant recommendations, accurate delivery estimates, and ensure a seamless food delivery experience." </string>
+    <string name="choose_location" translatable="false">Choose Your Location</string>
+    <string name="geoData_request" translatable="false">To provide you with the best dining experience, we need your permission to access your device\'s location. By enabling location services, we can offer personalized restaurant recommendations, accurate delivery estimates, and ensure a seamless food delivery experience." </string>
+
+    <!-- Menu screen -->
+    <string name="menu_item_home" translatable="false">Home</string>
+    <string name="menu_item_cart" translatable="false">Cart</string>
+    <string name="menu_item_search" translatable="false">Search</string>
+    <string name="menu_item_history" translatable="false">History</string>
+    <string name="menu_item_profile" translatable="false">Profile</string>
+    <string name="favorite_food" translatable="false">Explore Your Favorite Food</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
