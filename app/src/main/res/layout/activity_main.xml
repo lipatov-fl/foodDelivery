@@ -6,34 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <FrameLayout
-        android:id="@+id/placeHolder"
+    <fragment
+        android:id="@+id/fragmentContainerView"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        app:defaultNavHost="true"
         app:layout_constraintBottom_toTopOf="@+id/bNav"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/exploreYou">
-
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/fragmentContainerView"
-            android:name="androidx.navigation.fragment.NavHostFragment"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            app:defaultNavHost="true"
-            app:layout_constraintBottom_toTopOf="@+id/bNav"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/exploreYou"
-            app:navGraph="@navigation/navigation" />
-
-    </FrameLayout>
+        app:layout_constraintTop_toBottomOf="@+id/exploreYou"
+        app:navGraph="@navigation/navigation" />
 
     <TextView
         android:id="@+id/exploreYou"
@@ -45,7 +31,7 @@
         android:fontFamily="@font/yeonsung"
         android:text="@string/favorite_food"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@id/placeHolder"
+        app:layout_constraintBottom_toTopOf="@id/fragmentContainerView"
         app:layout_constraintEnd_toStartOf="@id/bell"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -66,12 +52,12 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:backgroundTint="@color/start_color_green"
-        app:itemIconTint="@drawable/bottom_nav_selector"
+        app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/placeHolder"
+        app:layout_constraintTop_toBottomOf="@id/fragmentContainerView"
         app:menu="@menu/menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

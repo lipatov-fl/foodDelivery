@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import androidx.navigation.findNavController
+import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.lipatovfl.fooddelivery.databinding.ActivityChooseLocationBinding
 import com.lipatovfl.fooddelivery.databinding.ActivityMainBinding
 
@@ -14,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         mainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mainBinding.root)
         var NavController = findNavController(R.id.fragmentContainerView)
-        var bottomNav = mainBinding.bNav
+        val bottomNav = findViewById<BottomNavigationView>(R.id.bNav)
+        bottomNav.setupWithNavController(NavController)
     }
 }
