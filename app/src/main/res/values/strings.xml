@@ -44,4 +44,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="popular_text">Popular</string>
     <string name="view_menu_text">View Menu</string>
+    <string name="menu_item_one">Herbal Pancake</string>
+    <string name="menu_price">$7</string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="photo_menu_description">Photo Menu</string>
 </resources>
