@@ -21,47 +21,47 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/wavesOfFo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="53dp"
-        android:fontFamily="@font/yeonsung"
         android:text="@string/starting_title"
         android:textColor="@color/black"
         android:textSize="40sp"
         android:textStyle="bold"
+        app:fontFamily="@font/yeonsung"
         app:layout_constraintBottom_toTopOf="@id/subtitleDeliever"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/startLogo" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/subtitleDeliever"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="234dp"
-        android:fontFamily="@font/lato"
         android:text="@string/starting_subtitle"
         android:textColor="@color/black"
         android:textSize="14sp"
         android:textStyle="bold"
+        app:fontFamily="@font/lato"
         app:layout_constraintBottom_toTopOf="@+id/desingAuthor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/wavesOfFo" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/desingAuthor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/yeonsung"
         android:text="@string/footer_design_by"
         android:textAlignment="center"
         android:textColor="@color/start_color_green"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:fontFamily="@font/yeonsung"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

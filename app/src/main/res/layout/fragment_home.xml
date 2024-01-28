@@ -7,10 +7,10 @@
     tools:context=".Fragment.HomeFragment">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_marginTop="67dp"
-        android:layout_marginBottom="30dp"
         app:cardCornerRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,5 +25,46 @@
             app:iss_no_dots="true"
             app:iss_period="2000"
             app:iss_text_align="CENTER" />
+
     </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/popularText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        app:fontFamily="@font/yeonsung"
+        android:text="@string/popular_text"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@id/btnViewMenu"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnViewMenu"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:background="@drawable/text_view_shape"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:text="@string/view_menu_text"
+        app:fontFamily="@font/lato"
+        android:textColor="@color/start_color_green"
+        app:layout_constraintBottom_toBottomOf="@+id/popularText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/popularText"
+        app:layout_constraintTop_toTopOf="@id/popularText" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popularText" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

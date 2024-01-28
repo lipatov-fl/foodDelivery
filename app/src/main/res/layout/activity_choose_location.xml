@@ -7,14 +7,14 @@
     android:padding="15dp"
     tools:context=".ChooseLocationActivity">
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="103dp"
-        android:fontFamily="@font/yeonsung"
         android:text="@string/choose_location"
         android:textSize="33sp"
+        app:fontFamily="@font/yeonsung"
         app:layout_constraintBottom_toTopOf="@id/set_location"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -47,31 +47,31 @@
             android:paddingBottom="17dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/to_provide"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="290dp"
-        android:fontFamily="@font/lato"
         android:text="@string/geoData_request"
         android:textColor="@color/black"
         android:textSize="20sp"
+        app:fontFamily="@font/lato"
         app:layout_constraintBottom_toTopOf="@id/desingAuthor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/set_location" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/desingAuthor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="33dp"
-        android:fontFamily="@font/yeonsung"
         android:text="@string/footer_design_by"
         android:textAlignment="center"
         android:textColor="@color/start_color_green"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:fontFamily="@font/yeonsung"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

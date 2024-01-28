@@ -39,6 +39,9 @@
     <string name="menu_item_history" translatable="false">History</string>
     <string name="menu_item_profile" translatable="false">Profile</string>
     <string name="favorite_food" translatable="false">Explore Your Favorite Food</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
+    <!-- Home fragment screen -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="popular_text">Popular</string>
+    <string name="view_menu_text">View Menu</string>
 </resources>

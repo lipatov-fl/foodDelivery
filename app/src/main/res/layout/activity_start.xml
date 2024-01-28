@@ -20,17 +20,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/burgerr" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/secondTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="29dp"
-        android:fontFamily="@font/yeonsung"
         android:text="@string/second_title"
         android:textAlignment="center"
         android:textColor="@color/start_color_green"
         android:textSize="25sp"
         android:textStyle="bold"
+        app:fontFamily="@font/yeonsung"
         app:layout_constraintBottom_toTopOf="@id/btnGoUserLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,17 +57,17 @@
         app:layout_constraintTop_toBottomOf="@+id/secondTitle"
         tools:ignore="UnusedAttribute" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/desingAuthor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:fontFamily="@font/yeonsung"
         android:text="@string/footer_design_by"
         android:textAlignment="center"
         android:textColor="@color/start_color_green"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:fontFamily="@font/yeonsung"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
