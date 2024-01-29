@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         setContentView(mainBinding.root)
         var NavController = findNavController(R.id.fragmentContainerView)
-        val bottomNav = findViewById<BottomNavigationView>(R.id.bNav)
+        val bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
         bottomNav.setupWithNavController(NavController)
     }
 }
