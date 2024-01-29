@@ -39,8 +39,10 @@
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/menuNamePopular"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
                 android:text=""
                 android:textColor="@color/black"
                 android:textSize="20sp"
@@ -63,15 +65,15 @@
                 app:layout_constraintBottom_toTopOf="@id/addToCardPopular"
                 app:layout_constraintEnd_toEndOf="@+id/addToCardPopular"
                 app:layout_constraintStart_toStartOf="@+id/addToCardPopular"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="@id/menuPhotoPopular" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/addToCardPopular"
                 android:layout_width="53dp"
                 android:layout_height="14dp"
-                android:layout_marginStart="81dp"
+                android:layout_marginStart="73dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginEnd="13dp"
+                android:layout_marginEnd="14dp"
                 android:layout_marginBottom="14dp"
                 android:background="@drawable/add_to_cart_shape"
                 android:gravity="center"
@@ -79,7 +81,7 @@
                 android:textColor="@color/white"
                 android:textSize="6sp"
                 app:fontFamily="@font/lato"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/menuPhotoPopular"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/menuNamePopular"
                 app:layout_constraintTop_toBottomOf="@+id/menuPricePopular"
