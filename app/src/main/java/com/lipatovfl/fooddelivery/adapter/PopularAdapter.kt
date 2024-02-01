@@ -2,8 +2,10 @@ package com.lipatovfl.fooddelivery.adapter
 
 import android.renderscript.ScriptGroup.Binding
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.lipatovfl.fooddelivery.R
 import com.lipatovfl.fooddelivery.databinding.PopularItemBinding
 
 class PopularAdapter(
@@ -13,38 +15,35 @@ class PopularAdapter(
 ) :
     RecyclerView.Adapter<PopularAdapter.PopularViewHolder>() {
 
-    override fun onCreateViewHolder(
+    override fun onCreateViewHolder(   // Берем разметку, надуваем и создаем класс PopularViewHolder
         parent: ViewGroup,
         viewType: Int
-    ): PopularAdapter.PopularViewHolder {
-        return PopularViewHolder(
-            PopularItemBinding.inflate(
-                LayoutInflater.from(parent.context),
-                parent,
-                false
-            )
-        )
+    ): PopularViewHolder {
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.popular_item, parent, false)
+        return PopularViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: PopularAdapter.PopularViewHolder, position: Int) {
+    override fun onBindViewHolder(
+        holder: PopularViewHolder,
+        position: Int
+    ) { // Заполняем View
         val item = items[position]
         val images = image[position]
         val price = price[position]
         holder.bind(item, price, images)
     }
 
-    override fun getItemCount(): Int {
+    override fun getItemCount(): Int {  // Размер
         return items.size
     }
 
-    class PopularViewHolder(private val binding: PopularItemBinding) :
-        RecyclerView.ViewHolder(binding.root) {
-        private val imagesView = binding.menuPhotoPopular
-
-        fun bind(item: String, price: String, images: Int) {
-            binding.menuNamePopular.text = item
-            binding.menuPricePopular.text = price
-            imagesView.setImageResource(images)
+    class PopularViewHolder(item: View) :
+        RecyclerView.ViewHolder(item) {
+        val binding = PopularItemBinding.bind(item)
+        fun bind(item: String, price: String, images: Int) = with(binding) {
+            menuNamePopular.text = item
+            menuPricePopular.text = price
+            menuPhotoPopular.setImageResource(images)
         }
 
     }
