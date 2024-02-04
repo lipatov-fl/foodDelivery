@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name" translatable="false">FoodDelivery</string>
     <!-- Start screen -->
     <string name="food_logo_description" translatable="false">Food logo</string>
@@ -41,14 +41,14 @@
     <string name="favorite_food" translatable="false">Explore Your Favorite Food</string>
 
     <!-- Home fragment screen -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="popular_text">Popular</string>
-    <string name="view_menu_text">View Menu</string>
-    <string name="menu_item_one">Herbal Pancake</string>
-    <string name="menu_price">$7</string>
-    <string name="add_to_cart">Add To Cart</string>
-    <string name="photo_menu_description">Photo Menu</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="popular_text" translatable="false">Popular</string>
+    <string name="view_menu_text" translatable="false">View Menu</string>
+    <string name="menu_item_one" translatable="false">Herbal Pancake</string>
+    <string name="menu_price" translatable="false">$7</string>
+    <string name="add_to_cart" translatable="false">Add To Cart</string>
+    <string name="photo_menu_description" translatable="false">Photo Menu</string>
 
     <!-- Cart fragment screen -->
-    <string name="menu_price_cart">1</string>
+    <string name="menu_price_cart" translatable="false">1</string>
 </resources>

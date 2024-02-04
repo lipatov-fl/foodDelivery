@@ -33,9 +33,7 @@ class PopularAdapter(
         holder.bind(item, price, images)
     }
 
-    override fun getItemCount(): Int {  // Размер
-        return items.size
-    }
+    override fun getItemCount(): Int = items.size  // Размер
 
     class PopularViewHolder(item: View) :
         RecyclerView.ViewHolder(item) {
