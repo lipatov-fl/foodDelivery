@@ -25,7 +25,42 @@ class CartAdapter(
             cartItemPrice.text = cartItemsPrice[position]
             cartImage.setImageResource(cartImages[position])
             cartItemQuantity.text = quantity.toString()
+
+            btnMinus.setOnClickListener {
+                deceaseQuantity(position)
+            }
+            btnPlus.setOnClickListener {
+                increaseQuantity(position)
+            }
+            btnDelete.setOnClickListener {
+                val itemPosition = adapterPosition
+                if(itemPosition != RecyclerView.NO_POSITION)
+                    deleteItem(itemPosition)
+            }
         }
+
+        private fun increaseQuantity(position: Int) {
+            if (itemQuantities[position] < 10) {
+                itemQuantities[position]++
+                binding.cartItemQuantity.text = itemQuantities[position].toString()
+            }
+        }
+
+        private fun deceaseQuantity(position: Int) {
+            if (itemQuantities[position] > 1) {
+                itemQuantities[position]--
+                binding.cartItemQuantity.text = itemQuantities[position].toString()
+            }
+        }
+
+        private fun deleteItem(position: Int) {
+            cartItems.removeAt(position)
+            cartImages.removeAt(position)
+            cartItemsPrice.removeAt(position)
+            notifyItemRemoved(position)
+            notifyItemRangeChanged(position, cartItems.size)
+        }
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CartViewHolder {
