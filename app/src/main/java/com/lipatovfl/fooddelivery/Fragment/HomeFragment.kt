@@ -1,6 +1,7 @@
 package com.lipatovfl.fooddelivery.Fragment
 
 import android.os.Bundle
+import android.os.TestLooperManager
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -11,6 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.interfaces.ItemClickListener
 import com.denzcoskun.imageslider.models.SlideModel
+import com.lipatovfl.fooddelivery.MenuBottomSheetFragment
 import com.lipatovfl.fooddelivery.R
 import com.lipatovfl.fooddelivery.adapter.PopularAdapter
 import com.lipatovfl.fooddelivery.databinding.FragmentHomeBinding
@@ -23,6 +25,10 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         homeBinding = FragmentHomeBinding.inflate(inflater, container, false)
+        homeBinding.btnViewMenu.setOnClickListener {
+            val bottomSheetDialog = MenuBottomSheetFragment()
+            bottomSheetDialog.show(parentFragmentManager, "Test")
+        }
         return homeBinding.root
     }
 
