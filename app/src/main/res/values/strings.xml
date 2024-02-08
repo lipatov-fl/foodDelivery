@@ -53,4 +53,7 @@
     <string name="menu_price_cart" translatable="false">1</string>
     <string name="menu_proceed" translatable="false">Proceed</string>
     <string name="menu_head" translatable="false">Cart</string>
+
+    <!-- ViewMenu fragment screen -->
+    <string name="view_menu_head" translatable="false">Menu</string>
 </resources>
