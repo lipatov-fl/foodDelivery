@@ -6,55 +6,31 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.lipatovfl.fooddelivery.R
+import com.lipatovfl.fooddelivery.adapter.MenuAdapter
+import com.lipatovfl.fooddelivery.databinding.FragmentCartBinding
+import com.lipatovfl.fooddelivery.databinding.FragmentSearchBinding
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [SearchFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class SearchFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+    private lateinit var searchBinding: FragmentSearchBinding
+    private lateinit var adapter: MenuAdapter
+    private val originalMenuFoodName = listOf("Spacy fresh crab", "Fresh crab", "Spacy fresh crab")
+    val originalMenuItemPrice = listOf("$35", "$30", "$32")
+    val originalMenuImage =
+        listOf(R.drawable.photo_menu1, R.drawable.photo_menu2, R.drawable.photo_menu3)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_search, container, false)
+        searchBinding = FragmentSearchBinding.inflate(inflater, container, false)
+        adapter = MenuAdapter(originalMenuFoodName, originalMenuItemPrice, originalMenuImage)
+        return searchBinding.root
     }
 
     companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment SearchFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            SearchFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
     }
 }

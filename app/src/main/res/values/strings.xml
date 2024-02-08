@@ -56,4 +56,7 @@
 
     <!-- ViewMenu fragment screen -->
     <string name="view_menu_head" translatable="false">Menu</string>
+
+    <!-- Search fragment screen -->
+    <string name="order_question_hint" translatable="false">What do you want to order?</string>
 </resources>
