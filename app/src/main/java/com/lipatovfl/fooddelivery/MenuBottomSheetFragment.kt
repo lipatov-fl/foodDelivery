@@ -1,15 +1,12 @@
 package com.lipatovfl.fooddelivery
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import com.lipatovfl.fooddelivery.adapter.CartAdapter
 import com.lipatovfl.fooddelivery.adapter.MenuAdapter
-import com.lipatovfl.fooddelivery.databinding.FragmentCartBinding
 import com.lipatovfl.fooddelivery.databinding.FragmentMenuBottomSheetBinding
 
 class MenuBottomSheetFragment : BottomSheetDialogFragment() {

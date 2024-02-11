@@ -5,13 +5,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.lipatovfl.fooddelivery.R
-import com.lipatovfl.fooddelivery.databinding.CartItemBinding
 import com.lipatovfl.fooddelivery.databinding.MenuItemBinding
 
 class MenuAdapter(
-    private val menuItemsName: MutableList<String>,
-    private val menuItemPrice: MutableList<String>,
-    private val menuImages: MutableList<Int>
+    private val menuItemsName: List<String>,
+    private val menuItemPrice: List<String>,
+    private val menuImages: List<Int>
 ) : RecyclerView.Adapter<MenuAdapter.MenuViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MenuViewHolder {
