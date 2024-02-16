@@ -59,4 +59,7 @@
 
     <!-- Search fragment screen -->
     <string name="order_question_hint" translatable="false">What do you want to order?</string>
+
+    <!-- History fragment screen -->
+    <string name="recent_buy_head" translatable="false">Recent buy</string>
 </resources>
