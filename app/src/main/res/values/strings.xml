@@ -62,4 +62,6 @@
 
     <!-- History fragment screen -->
     <string name="recent_buy_head" translatable="false">Recent buy</string>
+    <string name="early_purchase" translatable="false">Previously buy</string>
+    <string name="buy_again" translatable="false">Buy again</string>
 </resources>

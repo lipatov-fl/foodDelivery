@@ -20,15 +20,18 @@
             android:textColor="@color/black"
             android:textSize="20sp"
             app:fontFamily="@font/yeonsung"
+            app:layout_constraintBottom_toTopOf="@id/cardView2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
+            app:cardCornerRadius="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/recentBuyText">
@@ -46,27 +49,74 @@
                     android:layout_marginBottom="20dp"
                     android:src="@drawable/photo_menu1"
                     app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/nameOfProduct"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="wrap_content"
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/nameOfProduct"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="TextView"
-                    tools:layout_editor_absoluteX="105dp"
-                    tools:layout_editor_absoluteY="12dp" />
+                    android:layout_marginStart="18dp"
+                    android:text="@string/menu_item_one"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:fontFamily="@font/yeonsung"
+                    app:layout_constraintBottom_toTopOf="@+id/priceOfProduct"
+                    app:layout_constraintEnd_toStartOf="@id/cardCircle"
+                    app:layout_constraintStart_toEndOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-                <TextView
-                    android:id="@+id/textView5"
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/priceOfProduct"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView"
-                    tools:layout_editor_absoluteX="106dp"
-                    tools:layout_editor_absoluteY="51dp" />
+                    android:text="@string/menu_price"
+                    android:textColor="@color/start_color_green"
+                    android:textSize="25sp"
+                    app:fontFamily="@font/lato"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/nameOfProduct"
+                    app:layout_constraintTop_toBottomOf="@+id/nameOfProduct" />
+
+                <androidx.cardview.widget.CardView
+
+                    android:id="@+id/cardCircle"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="75dp"
+                    android:layout_marginEnd="32dp"
+                    app:cardBackgroundColor="@color/history_card_circle"
+                    app:cardCornerRadius="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/nameOfProduct"
+                    app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="36dp"
+            android:text="@string/early_purchase"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:fontFamily="@font/yeonsung"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="58dp"
+            tools:listitem="@layout/buy_again_item"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

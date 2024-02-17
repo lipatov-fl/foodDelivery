@@ -5,4 +5,5 @@
     <color name="start_color_green">#53E88B</color>
     <color name="end_color_green">#15BE77</color>
     <color name="search">#EFFAF2</color>
+    <color name="history_card_circle">#4BFF5D</color>
 </resources>
