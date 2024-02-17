@@ -21,7 +21,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/buyAgainFoodImage"
                 android:layout_width="62dp"
                 android:layout_height="62dp"
                 android:layout_marginStart="14dp"
@@ -29,12 +29,12 @@
                 android:layout_marginBottom="20dp"
                 android:src="@drawable/photo_menu1"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/nameOfProduct"
+                app:layout_constraintEnd_toStartOf="@id/buyAgainFoodName"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/nameOfProduct"
+                android:id="@+id/buyAgainFoodName"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="18dp"
@@ -42,13 +42,13 @@
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 app:fontFamily="@font/yeonsung"
-                app:layout_constraintBottom_toTopOf="@+id/priceOfProduct"
-                app:layout_constraintEnd_toStartOf="@id/cardCircle"
-                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintBottom_toTopOf="@+id/buyAgainFoodPrice"
+                app:layout_constraintEnd_toStartOf="@id/buyAgainFoodBtn"
+                app:layout_constraintStart_toEndOf="@+id/buyAgainFoodImage"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/priceOfProduct"
+                android:id="@+id/buyAgainFoodPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/menu_price"
@@ -56,11 +56,11 @@
                 android:textSize="25sp"
                 app:fontFamily="@font/lato"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/nameOfProduct"
-                app:layout_constraintTop_toBottomOf="@+id/nameOfProduct" />
+                app:layout_constraintStart_toStartOf="@+id/buyAgainFoodName"
+                app:layout_constraintTop_toBottomOf="@+id/buyAgainFoodName" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/cardCircle"
+                android:id="@+id/buyAgainFoodBtn"
                 android:layout_width="85dp"
                 android:layout_height="30dp"
                 android:layout_marginEnd="32dp"
@@ -72,7 +72,7 @@
                 android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/nameOfProduct"
+                app:layout_constraintStart_toEndOf="@+id/buyAgainFoodName"
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
