@@ -63,7 +63,7 @@
                     android:textSize="20sp"
                     app:fontFamily="@font/yeonsung"
                     app:layout_constraintBottom_toTopOf="@+id/priceOfProduct"
-                    app:layout_constraintEnd_toStartOf="@id/cardCircle"
+                    app:layout_constraintEnd_toStartOf="@id/orderStatus"
                     app:layout_constraintStart_toEndOf="@+id/imageView"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -80,8 +80,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/nameOfProduct" />
 
                 <androidx.cardview.widget.CardView
-
-                    android:id="@+id/cardCircle"
+                    android:id="@+id/orderStatus"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="75dp"
@@ -110,13 +109,14 @@
             app:layout_constraintTop_toBottomOf="@+id/cardView2" />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/buyAgainRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginTop="58dp"
-            tools:listitem="@layout/buy_again_item"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            tools:listitem="@layout/buy_again_item" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
