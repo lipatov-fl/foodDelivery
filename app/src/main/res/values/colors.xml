@@ -6,4 +6,5 @@
     <color name="end_color_green">#15BE77</color>
     <color name="search">#EFFAF2</color>
     <color name="history_card_circle">#4BFF5D</color>
+    <color name="profile_edtext">#f4f4f4</color>
 </resources>
