@@ -71,4 +71,7 @@
     <string name="profile_email_hint" translatable="false">loremipsum@gmail.com</string>
     <string name="profile_phone_hint" translatable="false">+70000000000</string>
     <string name="save_information_btn" translatable="false">Save information</string>
+
+    <!-- Notification fragment screen -->
+    <string name="notification_title" translatable="false">Notifications</string>
 </resources>

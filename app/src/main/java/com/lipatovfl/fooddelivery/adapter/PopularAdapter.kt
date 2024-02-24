@@ -37,7 +37,7 @@ class PopularAdapter(
 
     class PopularViewHolder(item: View) :   // Хранит в себе элементы и заполняем каждый элемент
         RecyclerView.ViewHolder(item) {
-        val binding = PopularItemBinding.bind(item)
+        private val binding = PopularItemBinding.bind(item)
         fun bind(item: String, price: String, images: Int) = with(binding) {
             menuNamePopular.text = item
             menuPricePopular.text = price
