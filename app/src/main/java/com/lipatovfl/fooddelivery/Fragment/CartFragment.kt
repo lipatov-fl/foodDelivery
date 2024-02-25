@@ -1,11 +1,14 @@
 package com.lipatovfl.fooddelivery.Fragment
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.lipatovfl.fooddelivery.CongratsBottomSheetFragment
+import com.lipatovfl.fooddelivery.PayOutActivity
 import com.lipatovfl.fooddelivery.R
 import com.lipatovfl.fooddelivery.adapter.CartAdapter
 import com.lipatovfl.fooddelivery.databinding.FragmentCartBinding
@@ -30,6 +33,14 @@ class CartFragment : Fragment() {
             CartAdapter(ArrayList(cartFoodName), ArrayList(cartItemPrice), ArrayList(cartImage))
         cartBinding.cartRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         cartBinding.cartRecyclerView.adapter = adapter
+        cartBinding.proceedBtn.setOnClickListener {
+            val intent = Intent(requireContext(), PayOutActivity::class.java)
+            startActivity(intent)
+        }
+        cartBinding.proceedBtn.setOnClickListener {
+            val bottomSheetDialog = CongratsBottomSheetFragment()
+            bottomSheetDialog.show(parentFragmentManager, "Test")
+        }
         return cartBinding.root
     }
 

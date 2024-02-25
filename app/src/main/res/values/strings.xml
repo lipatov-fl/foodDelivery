@@ -74,4 +74,14 @@
 
     <!-- Notification fragment screen -->
     <string name="notification_title" translatable="false">Notifications</string>
+
+    <!-- Payment activity screen -->
+    <string name="payment_title" translatable="false">Edit</string>
+    <string name="payment_method_item" translatable="false">Payment Method</string>
+    <string name="payment_amount_item" translatable="false">Total Amount</string>
+    <string name="payment_place_order_btn" translatable="false">Place My Order</string>
+
+    <!-- Congrats fragment screen -->
+    <string name="congrats_title" translatable="false">Congrats \n Your Order Placed</string>
+    <string name="congrats_home_btn" translatable="false">Go Home</string>
 </resources>
