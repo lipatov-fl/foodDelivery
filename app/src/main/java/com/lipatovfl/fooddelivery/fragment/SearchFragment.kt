@@ -1,5 +1,6 @@
-package com.lipatovfl.fooddelivery.Fragment
+package com.lipatovfl.fooddelivery.fragment
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -19,17 +20,13 @@ class SearchFragment : Fragment() {
     private val originalMenuImage =
         listOf(R.drawable.photo_menu1, R.drawable.photo_menu2, R.drawable.photo_menu3)
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-
     private val filteredMenuFoodName = mutableListOf<String>()
     private val filteredMenuItemPrice = mutableListOf<String>()
     private val filteredMenuImage = mutableListOf<Int>()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         searchBinding = FragmentSearchBinding.inflate(inflater, container, false)
         adapter = MenuAdapter(filteredMenuFoodName, filteredMenuItemPrice, filteredMenuImage)
         searchBinding.menuRecyclerView.layoutManager = LinearLayoutManager(requireContext())
@@ -40,6 +37,7 @@ class SearchFragment : Fragment() {
         return searchBinding.root
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     private fun showAllMenu() {
         filteredMenuFoodName.clear()
         filteredMenuItemPrice.clear()
@@ -67,21 +65,19 @@ class SearchFragment : Fragment() {
         })
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     private fun filterMenuItems(query: String) {
         filteredMenuFoodName.clear()
         filteredMenuItemPrice.clear()
         filteredMenuImage.clear()
 
-        originalMenuFoodName.forEachIndexed {index, foodname ->
-            if(foodname.contains(query,ignoreCase = true)) {
+        originalMenuFoodName.forEachIndexed { index, foodname ->
+            if (foodname.contains(query, ignoreCase = true)) {
                 filteredMenuFoodName.add(foodname)
                 filteredMenuItemPrice.add(originalMenuItemPrice[index])
                 filteredMenuImage.add(originalMenuImage[index])
             }
         }
         adapter.notifyDataSetChanged()
-    }
-
-    companion object {
     }
 }

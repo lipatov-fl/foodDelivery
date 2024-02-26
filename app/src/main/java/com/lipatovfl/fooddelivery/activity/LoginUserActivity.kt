@@ -1,4 +1,4 @@
-package com.lipatovfl.fooddelivery
+package com.lipatovfl.fooddelivery.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -14,7 +14,7 @@ class LoginUserActivity : AppCompatActivity() {
         setContentView(loginUserBinding.root)
 
         loginUserBinding.btnSignUpUser.setOnClickListener {
-            val intent = Intent(this@LoginUserActivity, SignUpUserActivity ::class.java)
+            val intent = Intent(this@LoginUserActivity, SignUpUserActivity::class.java)
             startActivity(intent)
         }
     }

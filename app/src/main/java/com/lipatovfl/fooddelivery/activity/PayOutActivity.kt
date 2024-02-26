@@ -1,12 +1,12 @@
-package com.lipatovfl.fooddelivery
+package com.lipatovfl.fooddelivery.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.lipatovfl.fooddelivery.databinding.ActivityPayOutBinding
-import com.lipatovfl.fooddelivery.databinding.ActivityStartBinding
+import com.lipatovfl.fooddelivery.fragment.CongratsBottomSheetFragment
 
 class PayOutActivity : AppCompatActivity() {
-    private lateinit var payOutBinding : ActivityPayOutBinding
+    private lateinit var payOutBinding: ActivityPayOutBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         payOutBinding = ActivityPayOutBinding.inflate(layoutInflater)

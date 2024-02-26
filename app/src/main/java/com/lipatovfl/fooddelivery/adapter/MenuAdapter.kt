@@ -26,7 +26,7 @@ class MenuAdapter(
 
     inner class MenuViewHolder(item: View) :
         RecyclerView.ViewHolder(item) {
-        val binding = MenuItemBinding.bind(item)
+        private val binding = MenuItemBinding.bind(item)
 
         fun bind(position: Int) = with(binding) {
             menuFoodName.text = menuItemsName[position]

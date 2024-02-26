@@ -6,7 +6,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.lipatovfl.fooddelivery.R
 import com.lipatovfl.fooddelivery.databinding.BuyAgainItemBinding
-import com.lipatovfl.fooddelivery.databinding.CartItemBinding
 
 class BuyAgainAdapter(
     private val buyAgainFoodName: ArrayList<String>,

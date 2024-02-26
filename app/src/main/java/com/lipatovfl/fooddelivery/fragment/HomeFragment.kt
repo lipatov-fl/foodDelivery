@@ -1,18 +1,15 @@
-package com.lipatovfl.fooddelivery.Fragment
+package com.lipatovfl.fooddelivery.fragment
 
 import android.os.Bundle
-import android.os.TestLooperManager
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.interfaces.ItemClickListener
 import com.denzcoskun.imageslider.models.SlideModel
-import com.lipatovfl.fooddelivery.MenuBottomSheetFragment
 import com.lipatovfl.fooddelivery.R
 import com.lipatovfl.fooddelivery.adapter.PopularAdapter
 import com.lipatovfl.fooddelivery.databinding.FragmentHomeBinding
@@ -23,7 +20,7 @@ class HomeFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         homeBinding = FragmentHomeBinding.inflate(inflater, container, false)
         homeBinding.btnViewMenu.setOnClickListener {
             val bottomSheetDialog = MenuBottomSheetFragment()
@@ -49,7 +46,6 @@ class HomeFragment : Fragment() {
             }
 
             override fun onItemSelected(position: Int) {
-                val itemPosition = imageList[position]
                 val itemMessage = "Selected Image $position"
                 Toast.makeText(requireContext(), itemMessage, Toast.LENGTH_SHORT).show()
             }
@@ -66,9 +62,5 @@ class HomeFragment : Fragment() {
         val adapter = PopularAdapter(foodName, price, popularFoodImages)
         homeBinding.popularRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         homeBinding.popularRecyclerView.adapter = adapter
-    }
-
-    companion object {
-
     }
 }

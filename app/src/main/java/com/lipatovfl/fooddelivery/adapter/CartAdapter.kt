@@ -18,7 +18,7 @@ class CartAdapter(
 
     inner class CartViewHolder(item: View) :
         RecyclerView.ViewHolder(item) {
-        val binding = CartItemBinding.bind(item)
+        private val binding = CartItemBinding.bind(item)
         fun bind(position: Int) = with(binding) {
             val quantity = itemQuantities[position]
             cartFoodName.text = cartItems[position]
@@ -34,7 +34,7 @@ class CartAdapter(
             }
             btnDelete.setOnClickListener {
                 val itemPosition = adapterPosition
-                if(itemPosition != RecyclerView.NO_POSITION)
+                if (itemPosition != RecyclerView.NO_POSITION)
                     deleteItem(itemPosition)
             }
         }

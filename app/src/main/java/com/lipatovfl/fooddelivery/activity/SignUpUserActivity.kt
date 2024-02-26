@@ -1,9 +1,8 @@
-package com.lipatovfl.fooddelivery
+package com.lipatovfl.fooddelivery.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.lipatovfl.fooddelivery.databinding.ActivityLoginUserBinding
 import com.lipatovfl.fooddelivery.databinding.ActivitySignUpUserBinding
 
 class SignUpUserActivity : AppCompatActivity() {

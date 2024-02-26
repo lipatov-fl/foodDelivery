@@ -1,4 +1,4 @@
-package com.lipatovfl.fooddelivery
+package com.lipatovfl.fooddelivery.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import com.lipatovfl.fooddelivery.R
 import com.lipatovfl.fooddelivery.adapter.MenuAdapter
 import com.lipatovfl.fooddelivery.databinding.FragmentMenuBottomSheetBinding
 
@@ -13,14 +14,10 @@ class MenuBottomSheetFragment : BottomSheetDialogFragment() {
 
     private lateinit var menuBinding: FragmentMenuBottomSheetBinding
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         menuBinding = FragmentMenuBottomSheetBinding.inflate(inflater, container, false)
         menuBinding.btnBack.setOnClickListener {
             dismiss()
@@ -36,6 +33,4 @@ class MenuBottomSheetFragment : BottomSheetDialogFragment() {
         return menuBinding.root
     }
 
-    companion object {
-    }
 }

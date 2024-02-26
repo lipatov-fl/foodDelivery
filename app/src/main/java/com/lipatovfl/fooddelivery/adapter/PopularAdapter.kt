@@ -1,6 +1,5 @@
 package com.lipatovfl.fooddelivery.adapter
 
-import android.renderscript.ScriptGroup.Binding
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup

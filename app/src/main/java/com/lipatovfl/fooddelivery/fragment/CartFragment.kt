@@ -1,4 +1,4 @@
-package com.lipatovfl.fooddelivery.Fragment
+package com.lipatovfl.fooddelivery.fragment
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,23 +7,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.lipatovfl.fooddelivery.CongratsBottomSheetFragment
-import com.lipatovfl.fooddelivery.PayOutActivity
+import com.lipatovfl.fooddelivery.activity.PayOutActivity
 import com.lipatovfl.fooddelivery.R
 import com.lipatovfl.fooddelivery.adapter.CartAdapter
 import com.lipatovfl.fooddelivery.databinding.FragmentCartBinding
-import com.lipatovfl.fooddelivery.databinding.FragmentHomeBinding
-
 class CartFragment : Fragment() {
     private lateinit var cartBinding: FragmentCartBinding
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         cartBinding = FragmentCartBinding.inflate(inflater, container, false)
         val cartFoodName = listOf("Spacy fresh crab", "Fresh crab", "Spacy fresh crab")
         val cartItemPrice = listOf("$35", "$30", "$32")
@@ -44,6 +37,4 @@ class CartFragment : Fragment() {
         return cartBinding.root
     }
 
-    companion object {
-    }
 }
