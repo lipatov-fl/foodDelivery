@@ -7,13 +7,12 @@
     android:background="@color/white"
     tools:context=".fragment.NotificationBottomFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/appCompatTextView"
+            android:id="@+id/notificationTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
@@ -21,6 +20,7 @@
             android:textColor="@color/start_color_green"
             android:textSize="20sp"
             app:fontFamily="@font/yeonsung"
+            app:layout_constraintBottom_toTopOf="@id/notificationRecyclerView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -32,7 +32,7 @@
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/appCompatTextView"
+            app:layout_constraintTop_toBottomOf="@+id/notificationTitle"
             tools:listitem="@layout/notification_item" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 

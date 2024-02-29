@@ -53,6 +53,9 @@
     <string name="menu_price_cart" translatable="false">1</string>
     <string name="menu_proceed" translatable="false">Proceed</string>
     <string name="menu_head" translatable="false">Cart</string>
+    <string name="delete_image_description" translatable="false">Delete</string>
+    <string name="plus_image_description" translatable="false">Plus</string>
+    <string name="minus_image_description" translatable="false">Minus</string>
 
     <!-- ViewMenu fragment screen -->
     <string name="view_menu_head" translatable="false">Menu</string>
@@ -80,8 +83,11 @@
     <string name="payment_method_item" translatable="false">Payment Method</string>
     <string name="payment_amount_item" translatable="false">Total Amount</string>
     <string name="payment_place_order_btn" translatable="false">Place My Order</string>
+    <string name="pay_back_img_description" translatable="false">Image pay back</string>
+    <string name="pay_method_img_description" translatable="false">Image pay method</string>
 
     <!-- Congrats fragment screen -->
     <string name="congrats_title" translatable="false">Congrats \n Your Order Placed</string>
     <string name="congrats_home_btn" translatable="false">Go Home</string>
+    <string name="payment_completed_description" translatable="false">Payment completed</string>
 </resources>

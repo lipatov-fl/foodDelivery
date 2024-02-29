@@ -8,7 +8,9 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="87dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="10dp"
         app:cardCornerRadius="22dp"
         app:cardElevation="3dp"
@@ -72,7 +74,7 @@
                 android:id="@+id/addToCardPopular"
                 android:layout_width="53dp"
                 android:layout_height="14dp"
-                android:layout_marginStart="73dp"
+                android:layout_marginStart="60dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="14dp"
                 android:layout_marginBottom="14dp"

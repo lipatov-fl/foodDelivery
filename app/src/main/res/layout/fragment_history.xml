@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".fragment.HistoryFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -30,7 +31,9 @@
             android:id="@+id/cardView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
             app:cardCornerRadius="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -41,12 +44,13 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/imageView"
+                    android:id="@+id/menuPhotoImg"
                     android:layout_width="62dp"
                     android:layout_height="62dp"
                     android:layout_marginStart="14dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"
+                    android:contentDescription="@string/photo_menu_description"
                     android:src="@drawable/photo_menu1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@id/nameOfProduct"
@@ -64,7 +68,7 @@
                     app:fontFamily="@font/yeonsung"
                     app:layout_constraintBottom_toTopOf="@+id/priceOfProduct"
                     app:layout_constraintEnd_toStartOf="@id/orderStatus"
-                    app:layout_constraintStart_toEndOf="@+id/imageView"
+                    app:layout_constraintStart_toEndOf="@+id/menuPhotoImg"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <androidx.appcompat.widget.AppCompatTextView
@@ -96,7 +100,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/textView3"
+            android:id="@+id/previouslyBuyTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -105,6 +109,7 @@
             android:textColor="@color/black"
             android:textSize="20sp"
             app:fontFamily="@font/yeonsung"
+            app:layout_constraintBottom_toTopOf="@id/buyAgainRecyclerView"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardView2" />
 
@@ -112,10 +117,11 @@
             android:id="@+id/buyAgainRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginTop="58dp"
+            android:layout_marginTop="56dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/previouslyBuyTitle"
             tools:listitem="@layout/buy_again_item" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 

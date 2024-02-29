@@ -5,15 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="15dp"
+    android:background="@color/white"
     tools:context=".activity.ChooseLocationActivity">
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/textView"
+        android:id="@+id/chooseLocationTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="103dp"
         android:text="@string/choose_location"
         android:textSize="33sp"
+        android:textColor="@color/black"
         app:fontFamily="@font/yeonsung"
         app:layout_constraintBottom_toTopOf="@id/set_location"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,7 +35,7 @@
         app:endIconTint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/chooseLocationTitle"
         tools:ignore="MissingConstraints">
 
         <AutoCompleteTextView

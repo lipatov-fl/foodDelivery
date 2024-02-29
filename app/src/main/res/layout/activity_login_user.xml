@@ -42,13 +42,13 @@
         android:textSize="17sp"
         android:textStyle="bold"
         app:fontFamily="@font/lato"
-        app:layout_constraintBottom_toTopOf="@id/login_to_yo"
+        app:layout_constraintBottom_toTopOf="@id/loginToYo"
         app:layout_constraintEnd_toEndOf="@id/wavesOfFo"
         app:layout_constraintStart_toStartOf="@id/wavesOfFo"
         app:layout_constraintTop_toBottomOf="@+id/wavesOfFo" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/login_to_yo"
+        android:id="@+id/loginToYo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="26dp"
@@ -82,7 +82,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_to_yo"
+        app:layout_constraintTop_toBottomOf="@+id/loginToYo"
         tools:ignore="InOrMmUsage,RtlSymmetry,UnusedAttribute" />
 
     <EditText
